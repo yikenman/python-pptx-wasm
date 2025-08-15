@@ -1,0 +1,30 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testMatch": [
+    "**/test/**/*.spec.ts",
+    "**/src/**/*.spec.ts"
+  ],
+  "transform": {
+    "^.+\\.(t|j)s$": [
+      "ts-jest",
+      {
+        "tsconfig": "./tsconfig.json"
+      }
+    ]
+  },
+  "testEnvironment": "node",
+  "clearMocks": true,
+  "restoreMocks": true,
+  "passWithNoTests": true,
+  "coverageDirectory": "./coverage",
+  "coverageProvider": "v8",
+  "collectCoverageFrom": [
+    "src/**/*.{ts,js}",
+    "!**/*.d.ts"
+  ]
+}

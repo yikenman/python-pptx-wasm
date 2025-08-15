@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": [
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src",
+    "test"
+  ]
+}
