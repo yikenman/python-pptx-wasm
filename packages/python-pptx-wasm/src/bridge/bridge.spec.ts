@@ -60,7 +60,7 @@ describe('init_pyodide_bridge', () => {
 
     await init_pyodide_bridge(pyodideMock);
 
-    expect(pyodideMock.loadPackage).toHaveBeenCalledWith('python_pptx');
+    expect(pyodideMock.loadPackage).toHaveBeenCalledWith('python-pptx');
     expect(pyodideMock.runPython).toHaveBeenCalled();
 
     expect(core_funs.create_presentation).toBe('create_presentation');
