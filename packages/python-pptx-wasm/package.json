@@ -2,7 +2,7 @@
   "name": "python-pptx-wasm",
   "private": false,
   "description": "A WASM JavaScript library for manipulating PowerPoint presentations via Python-pptx and pyodide.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "yikenman",
   "license": "MIT",
   "exports": {
