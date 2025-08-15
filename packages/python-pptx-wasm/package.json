@@ -20,7 +20,7 @@
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "dev": "rimraf dist && tsc -p tsconfig.build.json --watch",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:ci": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test:ci": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:cov": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/jest/bin/jest --runInBand",
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
