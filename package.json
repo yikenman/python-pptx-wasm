@@ -1,0 +1,34 @@
+{
+  "name": "python-pptx-wasm",
+  "private": true,
+  "description": "A WASM JavaScript library for manipulating PowerPoint presentations via Python-pptx and pyodide.",
+  "version": "0.0.0",
+  "author": "yikenman",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "check": "syncpack format && echo ''",
+    "ci:publish": "cp ./README.md ./packages/python-pptx-wasm/README.md && changeset publish",
+    "ci:version": "changeset version && pnpm install --frozen-lockfile=false",
+    "dev": "turbo run dev",
+    "format": "biome check .",
+    "format:fix": "biome check . --write",
+    "prepare": "husky",
+    "test": "turbo run test:ci"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.4",
+    "@changesets/cli": "^2.29.5",
+    "@changesets/config": "^3.0.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "syncpack": "^13.0.4",
+    "turbo": "^2.5.5"
+  },
+  "engines": {
+    "node": ">=20.13.0"
+  },
+  "homepage": "https://github.com/yikenman/python-pptx-wasm",
+  "packageManager": "pnpm@9.12.1",
+  "repository": "https://github.com/yikenman/python-pptx-wasm"
+}
